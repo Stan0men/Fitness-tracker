@@ -4,6 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material.module';
 import {FormsModule} from '@angular/forms';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatInputModule} from '@angular/material';
 
 
 import {AppComponent} from './app.component';
@@ -15,6 +16,7 @@ import {NewTrainingComponent} from './training/new-training/new-training.compone
 import {PastTrainingComponent} from './training/past-training/past-training.component';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {AppRoutingModule} from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {AppRoutingModule} from './app-routing.module';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
